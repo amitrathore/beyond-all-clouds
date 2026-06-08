@@ -375,6 +375,40 @@ em { font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 40
 }
 .ps-note a { background: var(--lime); padding: 2px 8px; border-radius: 6px; font-weight: 700; font-family: 'Space Grotesk', sans-serif; font-style: normal; }
 
+/* ============ REGISTER ============ */
+.register { max-width: 1000px; }
+.register-card {
+  background: var(--acid);
+  border: 2px solid var(--ink);
+  border-radius: 32px;
+  padding: 48px 40px;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+.register-card::before {
+  content: "★"; position: absolute; top: -20px; right: 40px;
+  font-size: 140px; color: var(--ink); opacity: .08;
+  pointer-events: none;
+}
+.register-head { text-align: center; margin-bottom: 32px; }
+.register-head .kicker { color: var(--ink); opacity: .8; }
+.register-head .section-title em { background: var(--pink); color: var(--cream); -webkit-text-fill-color: var(--cream); padding: 0 .15em; border-radius: 8px; }
+.register-head .section-sub { color: var(--ink); font-weight: 500; }
+.register-form {
+  background: var(--cream);
+  border: 2px solid var(--ink);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 4px 4px 0 var(--ink);
+}
+.register-form iframe { display: block; width: 100%; min-height: 600px; border: 0; }
+
+@media (max-width: 700px) {
+  .register-card { padding: 32px 20px; }
+  .register-form { padding: 12px; }
+}
+
 /* ============ FOOTER ============ */
 .footer { margin-top: 100px; position: relative; z-index: 2; }
 .footer-marquee {
